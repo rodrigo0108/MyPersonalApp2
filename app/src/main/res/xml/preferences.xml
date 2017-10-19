@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="Tus nombres"
+        android:key="fullname"
+        android:summary="Por favor inserte sus nombres completos"/>
+    <CheckBoxPreference android:title="Application Updates"
+        android:defaultValue="false"
+        android:summary="Seleccione la version"
+        android:key="applicationUpdates" />
+    <ListPreference     android:title="Tipo de fuente"
+        android:summary="Seleccionar tipo de fuente"
+        android:key="downloadType"
+        android:defaultValue="1"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues" />
+
+    <ListPreference     android:title="Tipo de estilo"
+        android:summary="Seleccionar el tipo de estilo"
+        android:key="tipoestilo"
+        android:defaultValue="1"
+        android:entries="@array/listArray2"
+        android:entryValues="@array/listValues2" />
+</PreferenceScreen>
